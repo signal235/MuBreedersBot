@@ -20,7 +20,7 @@ async def on_ready():
 @bot.command()
 async def 말해(ctx):
 	embed = discord.Embed(colour=808000)
-	st = '고무성빡대가리　　'+'　　'+ message.author.name+'　　'+today.strftime("%Y-%m-%d %H:%M:%S")
+	st = '고무성빡대가리　　'+'　　'+'　　'+today.strftime("%Y-%m-%d %H:%M:%S")
 	embed.add_field(name='대답', value=st,inline=False)
 	await ctx.send(embed=embed)
 	
