@@ -17,15 +17,12 @@ client = discord.Client()
 async def on_ready():
 	print('Start')
 
-
-@client.event
-async def on_message(message):
-    if message.author.bot: return
-
-    if cmd == '$말해':
-        await message.channel.send(f'메시지 내용: {message.content}\n메시지 작성 유저: {message.author.name}\n메시지 채널: {message.channel.name}\n메시지 길드: {message.guild.name}')
-
-
-
+@bot.command()
+async def 말해(ctx):
+	embed = discord.Embed(colour=808000)
+	st = '고무성빡대가리　　'+'　　'+ message.author.name+'　　'+today.strftime("%Y-%m-%d %H:%M:%S")
+	embed.add_field(name='대답', value=st,inline=False)
+	await ctx.send(embed=embed)
+	
 access_token = os.environ["BOT_TOKEN"]
 bot.run('access_token')
