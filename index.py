@@ -28,4 +28,4 @@ async def on_message(message):
 
 
 access_token = os.environ["BOT_TOKEN"]
-bot.run('ODAxNzA4NzE3NzYxNzU3MjI0.YAknbQ.0SjYAzakwrRjRtgqI9Y-xYiaMqg')
+bot.run('access_token')
