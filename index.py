@@ -21,4 +21,4 @@ async def 말해(ctx):
 	await ctx.send(embed=embed)
 	
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+bot.run(access_token)
