@@ -8,10 +8,6 @@ from discord.ext.commands import bot
 
 bot = commands.Bot(command_prefix='$')
 today = datetime.datetime.now()
-client = discord.Client()
-
-
-
 
 @bot.event
 async def on_ready():
@@ -25,4 +21,4 @@ async def 말해(ctx):
 	await ctx.send(embed=embed)
 	
 access_token = os.environ["BOT_TOKEN"]
-bot.run('access_token')
+client.run(access_token)
