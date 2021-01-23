@@ -3,7 +3,7 @@ import discord
 import asyncio
 import datetime 
 import openpyxl
-import 
+import os
 
 from beautifultable import BeautifulTable
 from discord.ext import commands
