@@ -205,5 +205,4 @@ async def on_message(message):
 
             embed = discord.Embed(title="Command List",  color=0x00ff00)
             
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run(process.env.TOKEN)
